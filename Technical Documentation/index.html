@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Documentation</title>
+    <link  href="/Technical Documentation/index.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+
+    <main id="main-doc" class="main-doc">
+
+        <div id="nav-div">
+            <nav id="navbar" class="navbar" >
+                <header><h1>ReactJs Topics</h1></header>
+                
+                <ul>
+                    
+                    <li><a class="nav-link" href="#Introduction_to_React" >Introduction to React</a></li>
+                    <hr>
+                    <li><a class="nav-link" href="#Is_React_really_that_simple?" >Is React really that simple?</a></li>
+                    <hr>
+                    <li><a class="nav-link" href="#JSX">JSX</a></li>
+                    <hr>
+                    <li><a class="nav-link" href="#React_components">React components</a></li>
+                    <hr>
+                </ul>
+
+            </nav>
+        </div>
+
+        <div id="section-div">
+        <section  id="Introduction_to_React" class="main-section" >
+            <header ><h1>Introduction to React</h1></header>  
+            <p>React is a JavaScript library that aims to simplify development of visual interfaces. </p>  
+            <p>Developed at Facebook and released to the world in 2013, it drives some of
+                the most widely used code in the world,powering Facebook and Instagram among
+                many, many other software companies. </p>
+            <p>Its primary goal is to make it easy to reason about an interface and its state 
+                in any point in time, by dividing the UI into a collection of components.</p>  
+        </section>
+
+        <section id="Is_React_really_that_simple?" class="main-section" >
+            <header  ><h1>Is React really that simple?</h1></header>  
+            <p>Even though I said that React is simpler than alternative frameworks, diving 
+               into React is still complicated, but mostly because of the corollary technologies
+                that can be integrated with React, like Redux, Relay or GraphQL. </p>  
+            <p>React in itself has a very small API.</p>
+            <p>There isn’t too much into React than these concepts:</p>
+            <ul>
+                <li>Component</li>
+                <li>JSX</li>
+                <li>State</li>
+                <li>props</li>
+                <li>redux</li>
+            </ul>
+            <code>npx install react react-dom --save</code><br>
+            <code>npx install create-react-app app-name</code>
+              
+        </section>
+
+        <section id="JSX" class="main-section" >
+            <header  ><h1>JSX</h1></header>  
+            <p>Many developers, including who is writing this article, at first sight thought that 
+                JSX was horrible, and quickly dismissed React.</p>  
+            <p>Even though they said JSX was not required, using React without JSX was painful.</p>
+            <p>It took me a couple years of occasionally looking at it to start digesting JSX, and 
+                now I largely prefer it over the alternative, which is: using templates.</p>
+            <code>const element =&#60;h1>Hello, world! &#60;/h1></code> <br>
+            <code>const myId = 'test'<br>
+                const element = 	&#60;h1 id={myId}>Hello, world!	&#60;/h1></code>
+             
+        </section>
+
+        <section id="React_components" class="main-section" >
+            <header  ><h1>React components</h1></header> 
+            <h1>What is a React component?</h1> 
+            <p>A component is one isolated piece of interface. For example in a typical blog
+            homepage you might find the Sidebar component, and the Blog Posts List component.
+             They are in turn composed by components themselves, so you could have a list of 
+             Blog post components, each for every blog post, and each with its own peculiar properties.</p>  
+             <img src="https://jaxenter.com/wp-content/uploads/2018/07/react-intro-1.png" alt="React-component" />
+            <p>Even plain HTML tags are component on their own, and they are added by default. </p>
+            <p>The next 2 lines are equivalent, they do the same thing. One with JSX, one without, by injecting</p>
+            <code>import React from 'react'<br>
+                import ReactDOM from 'react-dom'<br>
+                <br>
+                ReactDOM.render(      <br>
+                &#60;h1>Hello World!&#60;/h1>, <br>
+                  document.getElementById('app') <br>
+                ) <br>
+                 
+                ReactDOM.render( <br>
+                  React.DOM.h1(null, "Hello World!"),<br>
+                  document.getElementById('app')<br>
+                )<br>
+                </code>
+        </section>
+
+        <section id="React_components" class="main-section" >
+            <header  ><h1>React components</h1></header> 
+            <h1>What is a React component?</h1> 
+            <p>A component is one isolated piece of interface. For example in a typical blog
+            homepage you might find the Sidebar component, and the Blog Posts List component.
+             They are in turn composed by components themselves, so you could have a list of 
+             Blog post components, each for every blog post, and each with its own peculiar properties.</p>  
+             <img src="https://jaxenter.com/wp-content/uploads/2018/07/react-intro-1.png" alt="React-component" />
+            <p>Even plain HTML tags are component on their own, and they are added by default. </p>
+            <p>The next 2 lines are equivalent, they do the same thing. One with JSX, one without, by injecting</p>
+            <code>import React from 'react'<br>
+                import ReactDOM from 'react-dom'<br>
+                <br>
+                ReactDOM.render(      <br>
+                &#60;h1>Hello World!&#60;/h1>, <br>
+                  document.getElementById('app') <br>
+                ) <br>
+                 
+                ReactDOM.render( <br>
+                  React.DOM.h1(null, "Hello World!"),<br>
+                  document.getElementById('app')<br>
+                )<br>
+                </code>
+        </section>
+
+    </div>
+    </main>
+    
+</body>
+</html>
